@@ -1,2 +1,5 @@
 /backstop_data/
 /dist
+
+**/*.css
+**/*.css.map
