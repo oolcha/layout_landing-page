@@ -2,17 +2,29 @@
   display: block;
   height: 24px;
   width: 24px;
-  background-image: url("../images/icons/icon-burger-menu.png");
-}
+  background-image: url("../images/icons/icon-burger-menu.svg");
+  background-size: cover;
 
-.icon--phone {
-  background-image: url("../images/icons/icon-phone.png");
-}
+  @include hover(transform, scale(1.2));
 
-.icon--menu {
-  background-image: url("../images/icons/icon-burger-menu.png");
-}
+  @include onTablet {
+    height: 32px;
+    width: 32px;
+  }
 
-.icon--close {
-  background-image: url("../images/icons/icon-close.png");
+  &--phone {
+    background-image: url("../images/icons/icon-phone.svg");
+  }
+
+  &--menu {
+    background-image: url("../images/icons/icon-burger-menu.svg");
+
+    &:hover {
+      background-image: url("../images/icons/icon-menu-hover.svg");
+    }
+  }
+
+  &--close {
+    background-image: url("../images/icons/icon-close.svg");
+  }
 }

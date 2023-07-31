@@ -5,39 +5,43 @@
   background-color: #e5e6e8;
   font-weight: 700;
   text-transform: uppercase;
-}
 
-.menu__top {
-  margin-bottom: 32px;
-}
+  &__top {
+    margin-bottom: 32px;
 
-.menu__nav {
-  margin-bottom: 40px;
-}
+    @include onTablet {
+      margin-bottom: 0;
+    }
+  }
 
-.menu__content {
-  padding-inline: 20px;
-}
+  &__nav {
+    margin-bottom: 40px;
+  }
 
-.menu__phone-number {
-  display: block;
-  margin-bottom: 16px;
-  color: inherit;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 2px;
-}
+  &__content {
+    @include constentPaddingInline;
+  }
 
-.menu__call-to-order {
-  display: block;
-  width: fit-content;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #292929;
+  &__phone-number {
+    display: block;
+    margin-bottom: 16px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
 
-  color: inherit;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 2px;
+  &__call-to-order {
+    display: block;
+    width: fit-content;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $main-text-color;
+
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
 }
