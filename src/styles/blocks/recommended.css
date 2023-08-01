@@ -1,0 +1,9 @@
+.recommended {
+  margin: 0;
+}
+.recommended__products {
+  display: grid;
+  row-gap: 40px;
+}
+
+/*# sourceMappingURL=recommended.css.map */
