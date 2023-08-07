@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html
+  lang="en"
+  class="page"
+  xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -203,6 +206,9 @@
               </article>
             </div>
 
+            <div class="button button__categories">
+              <a href="#" class="button__categories-primary">View all</a>
+            </div>
           </section>
 
           <section class="about-us" id="about-us">
@@ -212,11 +218,13 @@
               <p class="about-us__description">
                 We’re a London-based tech company on a mission to remove barriers between people and technology.
               </p>
+              <br>
               <p class="about-us__description">
                 To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.
                 <br>
                 No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple.
               </p>
+              <br>
               <p class="about-us__description">
                 Because beautiful tech shouldn’t be complicated.
               </p>
@@ -226,38 +234,63 @@
           <section class="contact-us" id="contact-us">
             <h2 class="section-title">Contact us</h2>
 
-            <div class="contact-us__form">
-              <form action="/">
-                <input
-                  name="name"
-                  type="text"
-                  placeholder="Name"
-                  class="contact-us__form contact-us__form-field"
-                >
+            <div class="contact-us__container">
 
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  class="contact-us__form contact-us__form-field"
-                >
+              <div class="contact-us__form">
+                <form action="/">
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="Name"
+                    class="contact-us__form-field"
+                  >
 
-                <textarea
-                  name="message"
-                  placeholder="Message"
-                  class="contact-us__form contact-us__form-textarea"
-                >
-                </textarea>
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    class="contact-us__form-field"
+                  >
 
-                <button class="contact-us__button">Send</button>
-              </form>
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    class="contact-us__form-field contact-us__form-field--textarea"
+                  ></textarea>
+
+                  <button class="contact-us__form-button">Send</button>
+                </form>
+              </div>
+
+              <div class="contact-us__info">
+                <div class="contact-us__info-field">
+                  <div class="contact-us__info-title">Phone</div>
+                  <a href="tel:+1 234 5555-55-55" class="contact-us__info-link">+1 234 5555-55-55</a>
+                </div>
+
+                <div class="contact-us__info-field">
+                  <div class="contact-us__info-title">Email</div>
+                  <a href="mailto:hello@nothing.com" class="contact-us__info-link">hello@nothing.com</a>
+                </div>
+
+                <div class="contact-us__info-field">
+                  <div class="contact-us__info-title">Address</div>
+                  <a href="https://goo.gl/maps/uBQo1TZ2gAx54sBD6" class="contact-us__info-link">
+                    400 first ave.
+                    <br>
+                    suite 700
+                    <br>
+                    Minneapolis, MN 55401
+                  </a>
+                </div>
+              </div>
+
             </div>
           </section>
         </div>
       </div>
     </main>
 
-    <footer class="footer">
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>

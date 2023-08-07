@@ -1,6 +1,8 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 
+@import "reset";
+
 @import "blocks/page";
 @import "blocks/header";
 @import "blocks/top-bar";
@@ -15,3 +17,4 @@
 @import "blocks/categories";
 @import "blocks/footer";
 @import "blocks/contact-us";
+@import "blocks/button";
