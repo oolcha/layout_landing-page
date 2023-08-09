@@ -28,7 +28,7 @@
       }
 
       &:focus {
-        border: 1px solid #292929;
+        border: 1px solid $main-text-color;
       }
 
       &::placeholder {
@@ -59,7 +59,7 @@
       background: #f8f8fa;
       padding: 0 48px;
 
-      color: #292929;
+      color: $main-text-color;
       font-family: inherit;
       font-size: 16px;
       font-weight: 700;
