@@ -13,7 +13,33 @@
   }
 
   &--phone {
+    position: relative;
     background-image: url("../images/icons/icon-phone.svg");
+
+    &-tooltip {
+      position: absolute;
+      right: 100%;
+      top: 25%;
+      width: max-content;
+      padding-right: 8px;
+
+      color: $main-text-color;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0;
+
+      transition: opacity 0.3s;
+    }
+
+    &:hover {
+      .icon--phone-tooltip {
+        opacity: 1;
+      }
+    }
   }
 
   &--menu {

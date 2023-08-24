@@ -1,10 +1,16 @@
 .page {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Mono", sans-serif;
   color: $main-text-color;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 140%;
-  font-size: 14px;
 
   scroll-behavior: smooth;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
 
   &__body {
     margin: 0;

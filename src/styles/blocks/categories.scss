@@ -13,10 +13,13 @@
   &__photos {
     @include pageGrid;
     margin-bottom: 16px;
+    overflow: hidden;
+
   }
 
   &__link {
     position: relative;
+    @include hover(transform, scale(1.05));
 
     &--wide {
       @include onTablet {
@@ -25,7 +28,6 @@
       @include onDesktop {
         grid-column: span 8;
       }
-
     }
 
     &--square {
@@ -50,8 +52,9 @@
 
   &__title {
     margin: 0;
+    font-family: "Space Grotesk", sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 140%;
   }
 }
