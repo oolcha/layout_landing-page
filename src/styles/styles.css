@@ -45,7 +45,6 @@ ul {
   overflow: hidden;
 }
 .page__body {
-  margin: 0;
   min-width: 320px;
 }
 .page__menu {
@@ -295,13 +294,10 @@ ul {
   }
 }
 
-.product {
-  overflow: hidden;
-}
 .product__photo {
+  transition: transform 0.3s;
   width: 100%;
   margin-bottom: 24px;
-  transition: transform 0.3s;
 }
 .product__photo:hover {
   transform: scale(1.05);
@@ -414,7 +410,6 @@ ul {
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
   margin-bottom: 16px;
-  overflow: hidden;
 }
 @media (min-width: 576px) {
   .category__photos {
@@ -428,11 +423,7 @@ ul {
   }
 }
 .category__link {
-  position: relative;
-  transition: transform 0.3s;
-}
-.category__link:hover {
-  transform: scale(1.05);
+  overflow: hidden;
 }
 @media (min-width: 576px) {
   .category__link--wide {
@@ -443,10 +434,6 @@ ul {
   .category__link--wide {
     grid-column: span 8;
   }
-}
-.category__link--square {
-  height: 0;
-  padding-bottom: 100%;
 }
 @media (min-width: 576px) {
   .category__link--square {
@@ -459,10 +446,13 @@ ul {
   }
 }
 .category__photo {
-  position: absolute;
+  transition: transform 0.3s;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.category__photo:hover {
+  transform: scale(1.2);
 }
 .category__title {
   margin: 0;
@@ -529,6 +519,11 @@ ul {
   border: 1px solid transparent;
   background: #f8f8fa;
   outline: none;
+  color: #292929;
+  font-family: "Space Mono", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
   transition: border 0.5s;
 }
 .contact-us__form-field:hover {
@@ -537,11 +532,13 @@ ul {
 .contact-us__form-field:focus {
   border: 1px solid #292929;
 }
-.contact-us__form-field:-webkit-autofill, .contact-us__form-field:-webkit-autofill:hover, .contact-us__form-field:-webkit-autofill:focus {
-  border: 1px solid #292929;
+.contact-us__form-field:-webkit-autofill {
   -webkit-text-fill-color: #292929;
   -webkit-box-shadow: 0 0 0 1000px #f8f8fa inset;
   transition: background-color 0.5s ease-in-out 0s;
+}
+.contact-us__form-field:-webkit-autofill:focus {
+  border: 1px solid #292929;
 }
 .contact-us__form-field::placeholder {
   color: #7e7e83;
